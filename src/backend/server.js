@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -12,4 +14,5 @@ app.get('/api/test', (req, res) => {
 
 app.use(express.json());
 
-require('dotenv').config();
+console.log(process.env.TEST_VAR);  
+
