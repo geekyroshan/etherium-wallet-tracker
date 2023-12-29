@@ -11,3 +11,5 @@ app.get('/api/test', (req, res) => {
 });
 
 app.use(express.json());
+
+require('dotenv').config();
