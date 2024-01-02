@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                console.log('API Response:', data); // Add this line to log the API response
+                console.log('API Response:', data);
                 if(data.status === "1" && data.message === "OK") {
                     displayTransactions(data.result);
                 } else {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
             transactions.forEach(tx => {
                 const date = new Date(tx.timeStamp * 1000);
-                const dateString = date.toLocaleString(); // Converts to a readable date and time
+                const dateString = date.toLocaleString(); 
         
                 const li = document.createElement('li');
                 li.textContent = `Date: ${dateString}, Hash: ${tx.hash}, From: ${tx.from}, To: ${tx.to}, Value: ${web3.utils.fromWei(tx.value, 'ether')} ETH`;
