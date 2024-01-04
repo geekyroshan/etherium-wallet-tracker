@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #4caf50; /* Green */
-  --secondary-color: #304ffe; /* Indigo */
-  --background-color: #f4f4f4; /* Light gray background */
+  --primary-color: #4caf50; 
+  --secondary-color: #304ffe; 
+  --background-color: #f4f4f4; 
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
 }
@@ -14,11 +14,11 @@ body, html {
   margin: 0;
   font-family: var(--font-primary);
   background-color: var(--background-color);
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
 }
 
 .container {
-  padding-top: 70px; /* Enough space for the fixed header */
+  padding-top: 70px; 
 }
 
 .header {
@@ -149,7 +149,7 @@ body, html {
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 120px; /* Larger space for the fixed header on smaller screens */
+    padding-top: 120px; 
   }
 
   .header {

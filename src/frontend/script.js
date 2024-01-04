@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const walletAddressText = document.getElementById('walletAddress');
     const referenceText = document.getElementById('referenceText');
     const ethBalanceDisplay = document.getElementById('ethBalance');
-    let web3; // Define web3 at the top level of your script
+    let web3; 
 
     connectWalletButton.addEventListener('click', function() {
         if (window.ethereum) {
             ethereum.request({ method: 'eth_requestAccounts' })
             .then(function(accounts) {
-                web3 = new Web3(window.ethereum); // Instantiate web3 with the provider
+                web3 = new Web3(window.ethereum);
                 currentAccount = accounts[0];
                 connectWalletButton.style.display = 'none';
                 disconnectWalletButton.style.display = 'block';
