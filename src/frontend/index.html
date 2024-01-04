@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ethereum Wallet Tracker</h1>
-    </header>
-    <main>
-        <section id="walletConnection">
-            <button id="connectWallet">Connect Wallet</button>
-            <section id="walletInfo">
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Ethereum Wallet Tracker</h1>
+        </header>
+        <main class="main-content">
+            <section class="wallet-connection">
+                <button id="connectWallet" class="btn-connect">Connect Wallet</button>
+                <button id="disconnectWallet" class="btn-disconnect" style="display: none;">Disconnect Wallet</button>
+            </section>
+            <section class="wallet-info">
                 <h2>Wallet Info</h2>
-                <div id="walletDetails">
-                    <p id="walletAddress">Connected wallet: Not connected</p>
-                    <p id="ethBalance">ETH Balance: -</p>
-
-                    <!-- Further wallet information can be added here -->
-                </div>
-                <p class="reference-text">Your wallet information will be displayed here after connection.</p>
-            </section>  
-            <section id="transactionHistory">
+                <p id="walletAddress">Wallet: Not connected</p>
+                <p id="ethBalance">ETH Balance: -</p>
+                <p id="referenceText" class="reference-text">Your wallet information will be displayed below after a successful connection.</p>
+            </section>
+            <section class="transaction-history">
                 <h3>Transaction History</h3>
-                <ul id="transactionsList"></ul>
-            </section>                      
-    </main>
-    <footer>
-        <p>&copy; 2023 Ethereum Wallet Tracker</p>
-    </footer>
+                <div id="transactionsList" class="transactions-list"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2023 Ethereum Wallet Tracker</p>
+        </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
     <script src="script.js"></script>
 </body>
